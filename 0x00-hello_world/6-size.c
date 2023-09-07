@@ -4,7 +4,7 @@
  * main - Entry point
  * Return: (0) indicates program's exit status
 */
-int main (void)
+int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	printf("Size of an int: %zu byte(s)\n", sizeof(int));
