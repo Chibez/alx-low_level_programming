@@ -1,19 +1,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** 
- *
- *
+/**
+ *main - Entry Point
+ *Return: always zero (0)
 */
+
 int main(void)
 {
-	int n =97;
+	int lowerAlpha = 'a';
 
-	while (n < 122);
+	while (lowerAlpha <= 'a')
 	{
-		putchar(n);
-		n++;
+		putchar(lowerAlpha);
+		putchar('\n');
+		lowerAlpha++;
 	}
-	putchar('/n');
 	return (0);
 }
