@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
  * _puts - Prints a string followed by a newline character.
  *
@@ -8,8 +10,9 @@
 void _puts(char *str)
 {
 	while (*str)
-
-		_putchar(*str++);
-
+	{
+		_putchar(*str);
+		str++;
+	}
 	_putchar('\n');
 }
