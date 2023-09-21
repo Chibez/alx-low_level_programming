@@ -1,7 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <unistd.h>
-
+/**
+ * _strcat - Concatenates two strings.
+ *
+ * @dest: Pointer to the destination string.
+ * @src: Pointer to the source string to append.
+ *
+ * Return: Pointer to the destination string after concatenation.
+ */
 char *_strcat(char *dest, char *src)
 {
 
