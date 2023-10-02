@@ -10,15 +10,20 @@
  */
 int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	int product = num1 * num2;
+	int number1;
+	int number2;
+	int product;
 
 	if (argc != 3)
 	{
-		printf("Error: Please provide exactly two integer arguments.\n");
+		printf("Error\n");
 		return (1);
 	}
-	printf("Product: %d\n", product);
+	number1 = atoi(argv[1]);
+	number2 = atoi(argv[2]);
+	product = number1 * number2;
+
+	printf("%d\n", product);
+
 	return (0);
 }
