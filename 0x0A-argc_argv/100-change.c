@@ -12,8 +12,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int myCents, myCoins = 0;
-	int denominations[] = {25, 10, 5, 2, 1};
+	int cents, coins = 0;
+	int deno[] = {25, 10, 5, 2, 1};
 	int i;
 
 	if (argc != 2)
@@ -21,12 +21,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	myCents = atoi(argv[1]);
+	cents = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
 	{
-		myCoins += myCents / denominations[i];
-		myCents %= denominations[i];
+		coins += cents / deno[i];
+		cents %= deno[i];
 	}
-	printf("%d\n", myCoins);
+	printf("%d\n", coins);
 	return (0);
 }
