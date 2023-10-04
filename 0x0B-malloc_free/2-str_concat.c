@@ -7,7 +7,6 @@
  *
  * Return: A pointer to a newly allocated memory space
  *         containing the concatenated strings
- *         (including the null terminator).
  *         If allocation fails or s1/s2 is NULL, returns NULL.
  */
 char *str_concat(char *s1, char *s2)
