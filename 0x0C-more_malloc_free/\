@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void *malloc_checked(unsigned int b)
+{
+    void *cal = malloc(b);
+
+    if (cal == NULL)
+    {
+        exit(98);
+    }
+
+    return (cal);
+}
