@@ -7,12 +7,12 @@
  */
 void print_opcodes(unsigned char *main_ptr, int num_bytes)
 {
-	int i;
+	int jam;
 
-	for (i = 0; i < num_bytes; i++)
+	for (jam = 0; jam < num_bytes; jam++)
 	{
-		printf("%02x", main_ptr[i]);
-		if (i < num_bytes - 1)
+		printf("%02x", main_ptr[jam]);
+		if (jam < num_bytes - 1)
 		{
 			printf(" ");
 		}
