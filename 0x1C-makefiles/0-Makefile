@@ -1,0 +1,26 @@
+# Makefile for building the 'school' executable
+
+# Compiler
+CC = gcc
+
+# Compiler flags
+CFLAGS = -Wall -Wextra -pedantic -std=c99
+
+# Source files
+SRCS = main.c foo.c bar.c
+
+# Object files
+OBJS = $(SRCS:.c=.o)
+
+# Executable name
+EXEC = school
+
+# Rule to build the executable
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+    $(CC) $(CFLAGS) $(OBJS) -o $(EXEC)
+
+# Rule to compile source files
+%.o: %.c
+    $(CC) $(CFLAGS) -c $< -o $@
